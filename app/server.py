@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1-2icB2m6bpz20u6w1uWZiZzJQrJ1SEjQ?alt=media&key=AIzaSyACjIUZH-eCqYWZ4ZptnKbTZs9HMQhd3AE'
+export_file_name = 'COVID-CT-densenet121.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['2019-nCoV-Negative', '2019-nCoV-Positive']
 path = Path(__file__).parent
 
 app = Starlette()
