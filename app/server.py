@@ -9,24 +9,24 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.googleapis.com/drive/v3/files/1bzkPLRGGmZ2n2awrj6EOKE11tnWGQXoM?alt=media&key=AIzaSyACjIUZH-eCqYWZ4ZptnKbTZs9HMQhd3AE'
-export_file_name = 'COVID-CT-densenet121.pkl'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1h6azhw9HhSMHgi6s07mC3szuYi-XIuT2?alt=media&key=AIzaSyACjIUZH-eCqYWZ4ZptnKbTZs9HMQhd3AE'
+export_file_name = 'COVID-CT-densenet121-4.pkl'
 
 classes = ['2019-nCoV-Negative', '2019-nCoV-Positive', 'Severe', 'Asymptomatic', 'Mild', 'Critical', 'Absorption stage',
        'Consolidation stage', 'Early stage', 'Dissipation stage',
-       'Moderate', 'Pregnant','"Diamond Princess" Cruise Ship', 'Beijing, China',
-       'Changsha, China.', 'China (Unspecified Region)',
-       'Guangdon, China', 'Hainan, China', 'Hubei, China', 'Hunan, China',
-       'Jingmen, Hubei, China', 'Qingdao, China', 'Shanghai, China',
-       'Shenzhen, China', 'Sichuan, China', 'Wuhan, China',
-       'Wuhan, China ', "Xi'an, China ", 'Zhejiang, China ','75.0 y/o', '76.0 y/o', '70.0 y/o', '73.0 y/o', '44.0 y/o',
+       'Moderate', 'Pregnant', 'Male', 'Female', '75.0 y/o', '76.0 y/o', '70.0 y/o', '73.0 y/o', '44.0 y/o',
        '65.0 y/o', '37.0 y/o', '50.0 y/o', '1.0 y/o', '33.0 y/o',
        '21.0 y/o', '69.0 y/o', '57.0 y/o', '64.0 y/o', '60.0 y/o',
        '72.0 y/o', '63.0 y/o', '36.0 y/o', '34.0 y/o', '48.0 y/o',
        '45.0 y/o', '39.0 y/o', '66.0 y/o', '41.0 y/o', '40.0 y/o',
        '32.0 y/o', '49.0 y/o', '23.0 y/o', '71.0 y/o', '46.0 y/o',
        '27.0 y/o', '28.0 y/o', '31.0 y/o', '59.0 y/o', '62.0 y/o',
-       '55.0 y/o', 'Male', 'Female']
+       '55.0 y/o', '"Diamond Princess" Cruise Ship', 'Beijing, China',
+       'Changsha, China', 'China (Unspecified Region)',
+       'Guangdon, China', 'Hainan, China', 'Hubei, China', 'Hunan, China',
+       'Jingmen, Hubei, China', 'Qingdao, China', 'Shanghai, China',
+       'Shenzhen, China', 'Sichuan, China', 'Wuhan, China',
+       "Xi'an, China", 'Zhejiang, China']
 path = Path(__file__).parent
 
 app = Starlette()
