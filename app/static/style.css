@@ -43,6 +43,7 @@ body {
 
 .result-label {
     font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
     margin-top: 0.5em;
     padding: 10px;
     font-size: 18px;
