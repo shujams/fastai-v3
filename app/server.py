@@ -9,8 +9,8 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.googleapis.com/drive/v3/files/1h6azhw9HhSMHgi6s07mC3szuYi-XIuT2?alt=media&key=AIzaSyACjIUZH-eCqYWZ4ZptnKbTZs9HMQhd3AE'
-export_file_name = 'COVID-CT-densenet121-4.pkl'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1-2MGnst-QfcQPaVkAE7THSQl-ULob7H9?alt=media&key=AIzaSyACjIUZH-eCqYWZ4ZptnKbTZs9HMQhd3AE'
+export_file_name = 'COVID-CT-densenet121-5.pkl'
 
 classes = ['2019-nCoV-Negative', '2019-nCoV-Positive', 'Severe', 'Asymptomatic', 'Mild', 'Critical', 'Absorption stage',
        'Consolidation stage', 'Early stage', 'Dissipation stage',
